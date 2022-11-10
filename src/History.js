@@ -9,6 +9,7 @@ export default class History extends Component {
               <div>{item.formula.join("")}</div>
               <div
                 value={item.result}
+                onClick={this.props.onHistoryItemClicked}
               >
                 ={item.result}
               </div>
@@ -16,7 +17,7 @@ export default class History extends Component {
           );
         })}
 
-        <button>
+        <button onClick={this.props.onClearHistory}>
           Clear
         </button>
       </div>
