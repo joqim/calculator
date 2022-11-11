@@ -11,7 +11,8 @@ export function evaluate(arrFormula) {
       input === "-" ||
       input === "*" ||
       input === "/" ||
-      input === "%"
+      input === "%" ||
+      input === "^"
     );
   }
   
@@ -25,7 +26,8 @@ export function evaluate(arrFormula) {
       input === "-" ||
       input === "*" ||
       input === "/" ||
-      input === "%"
+      input === "%" ||
+      input === "^"
     );
   }
   
@@ -103,6 +105,9 @@ export function evaluate(arrFormula) {
             break;
           case "%":
             result = num2 % num1;
+            break;
+          case "^":
+            result = num2 ** num1;
             break;
           default:
             console.log("Default case");

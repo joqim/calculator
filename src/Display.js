@@ -2,14 +2,18 @@ import React, { Component } from "react";
 export default class Display extends Component {
   render() {
     return (
-      <div>
-        <form>
+      <div class="display-area">
+        <form class="display-textarea">
           <textarea
+            class="textarea-formula"
             value={this.props.formula.join("")}
-            readOnly
+            readonly
+            style={{ marginBottom: "-40px"}}
           ></textarea>
           <textarea
-            readOnly
+            
+            class="textarea-input"
+            readonly
             value={this.props.input}
           ></textarea>
         </form>

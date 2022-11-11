@@ -5,21 +5,18 @@ export default class History extends Component {
       <div>
         {this.props.history.map((item, index) => {
           return (
-            <div key={index}>
-              <div>{item.formula.join("")}</div>
+            <div key={index} className="history-list">
+              <div className="history-formula">{item.formula.join("")}</div>
               <div
+                className="history-input"
                 value={item.result}
                 onClick={this.props.onHistoryItemClicked}
               >
-                ={item.result}
+                = {item.result}
               </div>
             </div>
           );
         })}
-
-        <button onClick={this.props.onClearHistory}>
-          Clear
-        </button>
       </div>
     );
   }

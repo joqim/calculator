@@ -2,76 +2,86 @@ import React, { Component } from "react";
 export default class Buttons extends Component {
   render() {
     return (
-      <div>
-        <div>
-          <div onClick={this.props.onParenthesis}>
+      <div style={{ marginTop: "-50px"}}>
+        <div className="row-1">
+          <button style={{ marginRight: "10px"}} type="button" class="btn btn-light btn-lg" onClick={this.props.onParenthesis}>
             (
-          </div>
-          <div onClick={this.props.onParenthesis}>
+          </button>
+          <button style={{ marginRight: "10px"}} type="button" class="btn btn-light btn-lg" onClick={this.props.onParenthesis}>
             )
-          </div>
-          <div onClick={this.props.onClear}>
+          </button>
+          <button style={{ marginRight: "10px"}} type="button" class="btn btn-light btn-lg" onClick={this.props.onClear}>
             AC
-          </div>
-          <div onClick={this.props.onBackspace}>
+          </button>
+          <button style={{ marginRight: "10px"}} type="button" class="btn btn-light btn-lg" onClick={this.props.onBackspace}>
             CE
-          </div>
+          </button>
         </div>
-        <div>
-          <div onClick={this.props.onDigit}>
+        <div className="row-1" style={{ marginTop: "5px"}}>
+          <button style={{ marginRight: "10px"}} type="button" class="btn btn-light btn-lg" onClick={this.props.onDigit}>
             1
-          </div>
-          <div onClick={this.props.onDigit}>
+          </button>
+          <button style={{ marginRight: "10px"}} type="button" class="btn btn-light btn-lg" onClick={this.props.onDigit}>
             2
-          </div>
-          <div onClick={this.props.onDigit}>
+          </button>
+          <button style={{ marginRight: "10px"}} type="button" class="btn btn-light btn-lg" onClick={this.props.onDigit}>
             3
-          </div>
-          <div onClick={this.props.onOperator}>
+          </button>
+          <button style={{ marginRight: "10px"}} type="button" class="btn btn-light btn-lg" onClick={this.props.onOperator}>
             *
-          </div>
+          </button>
         </div>
-        <div>
-          <div onClick={this.props.onDigit}>
+
+        <div className="row-1" style={{ marginTop: "5px"}}>
+          <button style={{ marginRight: "10px"}} type="button" class="btn btn-light btn-lg" onClick={this.props.onDigit}>
             4
-          </div>
-          <div onClick={this.props.onDigit}>
+          </button>
+          <button style={{ marginRight: "10px"}} type="button" class="btn btn-light btn-lg" onClick={this.props.onDigit}>
             5
-          </div>
-          <div onClick={this.props.onDigit}>
+          </button>
+          <button style={{ marginRight: "10px"}} type="button" class="btn btn-light btn-lg" onClick={this.props.onDigit}>
             6
-          </div>
-          <div onClick={this.props.onOperator}>
+          </button>
+          <button style={{ marginRight: "10px"}} type="button" class="btn btn-light btn-lg" onClick={this.props.onOperator}>
             /
-          </div>
+          </button>
         </div>
-        <div>
-          <div onClick={this.props.onDigit}>
+        <div className="row-1" style={{ marginTop: "5px"}}>
+          <button style={{ marginRight: "10px"}} type="button" class="btn btn-light btn-lg" onClick={this.props.onDigit}>
             7
-          </div>
-          <div onClick={this.props.onDigit}>
+          </button>
+          <button style={{ marginRight: "10px"}} type="button" class="btn btn-light btn-lg" onClick={this.props.onDigit}>
             8
-          </div>
-          <div onClick={this.props.onDigit}>
+          </button>
+          <button style={{ marginRight: "10px"}} type="button" class="btn btn-light btn-lg" onClick={this.props.onDigit}>
             9
-          </div>
-          <div onClick={this.props.onOperator}>
+          </button>
+          <button style={{ marginRight: "10px"}} type="button" class="btn btn-light btn-lg" onClick={this.props.onOperator}>
             -
-          </div>
+          </button>
         </div>
-        <div>
-          <div onClick={this.props.onDigit}>
+        <div className="row-1" style={{ marginTop: "5px"}}>
+          <button style={{ marginRight: "10px"}} type="button" class="btn btn-light btn-lg" onClick={this.props.onDigit}>
             0
-          </div>
-          <div onClick={this.props.onDecimal}>
-            .
-          </div>
-          <div onClick={this.props.onEqual}>
-            =
-          </div>
-          <div onClick={this.props.onOperator}>
+          </button>
+          <button style={{ marginRight: "10px"}} type="button" class="btn btn-light btn-lg" onClick={this.props.onOperator}>
+            %
+          </button>
+          <button style={{ marginRight: "10px"}} type="button" class="btn btn-light btn-lg" onClick={this.props.onOperator}>
+            ^
+          </button>
+          <button style={{ marginRight: "10px"}} type="button" class="btn btn-light btn-lg" onClick={this.props.onOperator}>
             +
-          </div>
+          </button>
+        </div>
+
+        <div className="row-2" style={{ marginTop: "5px"}}>
+          <button style={{ marginRight: "10px", height: "70px"}} type="button" class="btn btn-light btn-lg" onClick={this.props.onDecimal}>
+            .
+          </button>
+          <button style={{ marginRight: "10px"}} type="button" class="btn btn-outline-primary" onClick={this.props.onEqual}>
+            =
+          </button>
         </div>
       </div>
     );

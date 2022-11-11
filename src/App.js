@@ -232,7 +232,8 @@ class App extends Component {
   render() {
     return (
       <div className="container">
-        <div className="calculator">
+        <div class="container-fluid" style={{ marginTop: "50px"}}>
+          <h2 style={{ marginLeft: "15px"}}>Calculator</h2>
           <Display formula={this.state.formula} input={this.state.input} />
           <Buttons
             onBackspace={this.onBackspace}
@@ -244,8 +245,14 @@ class App extends Component {
             onParenthesis={this.onParenthesis}
           />
         </div>
-        <div className="history">
-          <span>All History List</span>
+        
+        <div class="container-fluid" style={{ marginLeft: "50px", marginTop: "130px"}}>
+          <div style={{display: "inline"}}>
+            <h3 style={{display: "inline"}}>History</h3>
+            <button style={{ marginLeft: "35px", marginTop: "-10px", display: "inline"}} type="button" class="btn btn-outline-secondary" id="clear-history" onClick={this.onClearHistory}>
+              Clear
+            </button>
+          </div>
           <History
             showHistory={this.state.showHistory}
             history={this.state.history}
